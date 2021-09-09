@@ -73,7 +73,6 @@ class AutoEnumDocumenter(ClassDocumenter):
 
 # endregion AutoEnumDocumenter
 
-
 def setup(app):
     app.setup_extension('sphinx.ext.autodoc')  # Require autodoc extension
     app.add_autodocumenter(AutoEnumDocumenter)
