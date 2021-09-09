@@ -7,9 +7,15 @@ Welcome to Sphinx auto_enum ext's documentation!
 ================================================
 
 .. toctree::
+   :caption: General:
+
+   general/ext_gen
+
+.. toctree::
    :caption: Example:
 
    ex/ex
+   ex/ex_hex
 
 .. toctree::
    :maxdepth: 2
