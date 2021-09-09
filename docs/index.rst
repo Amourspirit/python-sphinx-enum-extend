@@ -7,6 +7,11 @@ Welcome to Sphinx auto_enum ext's documentation!
 ================================================
 
 .. toctree::
+   :caption: Example:
+
+   ex/ex
+
+.. toctree::
    :maxdepth: 2
    :caption: Contents:
 
@@ -16,5 +21,4 @@ Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+
