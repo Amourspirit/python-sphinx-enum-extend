@@ -33,6 +33,7 @@ release = __version__
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
+    'sphinx.ext.intersphinx',
     'sphinx_enum_extend'
 ]
 
@@ -58,3 +59,6 @@ html_theme = 'sphinx_rtd_theme'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+intersphinx_mapping = {
+    'enum_extend': ('https://python-enum-extend.readthedocs.io/en/master/', None)
+    }
