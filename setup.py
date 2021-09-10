@@ -16,6 +16,7 @@ HERE = pathlib.Path(__file__).parent
 with open(HERE / "README.md") as fh:
     README = fh.read()
 
+print(README)
 
 # This call to setup() does all the work
 setup(
