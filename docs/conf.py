@@ -13,12 +13,12 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath('..'))
-# sys.path.insert(0, os.path.join(os.path.abspath('..'), 'src'))
+sys.path.insert(0, os.path.join(os.path.abspath('..'), 'src'))
 from src.sphinx_enum_extend import __version__
-
+import src.sphinx_enum_extend.sphinx_enum_extend
 # -- Project information -----------------------------------------------------
 
-project = 'Sphinx auto_enum ext'
+project = 'sphinx-enum-extend'
 copyright = '2021, :Barry-Thomas-Paul: Moss'
 author = ':Barry-Thomas-Paul: Moss'
 
@@ -32,7 +32,10 @@ release = __version__
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.autosummary'
+    'sphinx.ext.autosummary',
+    'sphinx.ext.intersphinx',
+    'sphinx.ext.viewcode',
+    'sphinx_enum_extend'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -56,3 +59,7 @@ html_theme = 'sphinx_rtd_theme'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+intersphinx_mapping = {
+    'enum_extend': ('https://python-enum-extend.readthedocs.io/en/master/', None)
+    }

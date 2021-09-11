@@ -16,6 +16,7 @@ HERE = pathlib.Path(__file__).parent
 with open(HERE / "README.md") as fh:
     README = fh.read()
 
+print(README)
 
 # This call to setup() does all the work
 setup(
@@ -32,8 +33,11 @@ setup(
     # packages=[MODULE_ROOT_NAME],
     packages=find_packages(where='src', exclude=['tests', 'ex']),
     package_dir={'': 'src'},
+    install_requires=[
+        'enum-extend >=0.1.1',
+    ],
     # py_modules=MODULES,
-    keywords=['python', 'enum', 'autoenum', 'sphinx', 'sphinx-extension', 'enum-docstring' 'enum-extend'],
+    keywords=['python', 'enum', 'autoenum', 'sphinx', 'sphinx-extension', 'enum-docstring', 'enum-extend'],
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
