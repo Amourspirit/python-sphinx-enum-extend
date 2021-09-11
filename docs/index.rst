@@ -3,15 +3,26 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Sphinx auto_enum ext's documentation!
-================================================
+Welcome to sphinx-enum-extend's documentation!
+==============================================
+
+Sphinx Extension for |autoenum| that allows for auto-documenting python enums.
+
+Extends `autodoc <https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html>`_ in a way that allows
+for auto generation docs derived from |autoenum| class.
+
+Project home_
 
 .. toctree::
+   :maxdepth: 1
+   :titlesonly:
    :caption: General:
 
+   general/install
    general/ext_gen
 
 .. toctree::
+   :titlesonly:
    :caption: Example:
 
    ex/ex
@@ -21,10 +32,6 @@ Welcome to Sphinx auto_enum ext's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+.. |autoenum| replace:: :doc:`AutoEnum <enum_extend:class/AutoEnum>`
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-
+.. _home: https://github.com/Amourspirit/python-sphinx-enum-extend
