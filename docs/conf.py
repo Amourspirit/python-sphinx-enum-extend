@@ -18,7 +18,7 @@ from src.sphinx_enum_extend import __version__
 import src.sphinx_enum_extend.sphinx_enum_extend
 # -- Project information -----------------------------------------------------
 
-project = 'Sphinx auto_enum ext'
+project = 'sphinx-enum-extend'
 copyright = '2021, :Barry-Thomas-Paul: Moss'
 author = ':Barry-Thomas-Paul: Moss'
 
@@ -34,6 +34,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'sphinx.ext.viewcode',
     'sphinx_enum_extend'
 ]
 
