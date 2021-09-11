@@ -34,7 +34,7 @@ setup(
     packages=find_packages(where='src', exclude=['tests', 'ex']),
     package_dir={'': 'src'},
     # py_modules=MODULES,
-    keywords=['python', 'enum', 'autoenum', 'sphinx', 'sphinx-extension', 'enum-docstring' 'enum-extend'],
+    keywords=['python', 'enum', 'autoenum', 'sphinx', 'sphinx-extension', 'enum-docstring', 'enum-extend'],
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
