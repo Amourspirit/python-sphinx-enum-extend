@@ -33,6 +33,9 @@ setup(
     # packages=[MODULE_ROOT_NAME],
     packages=find_packages(where='src', exclude=['tests', 'ex']),
     package_dir={'': 'src'},
+    install_requires=[
+        'enum-extend >=0.1.1',
+    ],
     # py_modules=MODULES,
     keywords=['python', 'enum', 'autoenum', 'sphinx', 'sphinx-extension', 'enum-docstring', 'enum-extend'],
     classifiers=[
